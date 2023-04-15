@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Drink Maker</title>
+        <link
+            rel="shortcut icon"
+            href="images/Drink maker logo.svg"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="css/neumorphism.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Quicksand:wght@500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav>
+            <div class="text-center my-5 h2">
+                <img
+                    src="images/Drink maker logo.svg"
+                    alt="Drink Maker Logo"
+                    class="logo btn"
+                />
+            </div>
+        </nav>
+        <!-- Section 1 starts -->
+        <section class="container-fluid">
+            <section class="row mb-5">
+                <section class="col-sm-3 col-md-2 col-lg-3"></section>
+                <section class="col-sm-6 col-md col-lg-6">
+                    <div class="input-group">
+                        <input
+                            type="text"
+                            list="search-by-drink"
+                            name="search-drink-name"
+                            id="search-drink-name"
+                            placeholder="Enter Drink Name or Keywords..."
+                            class="form-control"
+                        />
+                        <datalist id="search-by-drink" class="dropdown-menu">
+                            <option value="null" id="-1">Enter Keywords</option>
+                        </datalist>
+                        <div class="input-group-append">
+                            <button
+                                class="btn btn-primary btnSearchByDrinkName"
+                                type="button"
+                                id="btnSearchByDrinkName"
+                            >
+                                Search 🔍
+                            </button>
+                        </div>
+                    </div>
+                </section>
+                <section class="col-sm-3 col-md-2 col-lg-3"></section>
+            </section>
+            <div class="row">
+                <div class="col-12 col-md-2"></div>
+                <div class="col-12 col-md-8">
+                    <div class="card bg-primary shadow-soft border-light">
+                        <div class="row no-gutters align-items-center">
+                            <img
+                                src="#"
+                                alt="Drink 1 of the Day"
+                                id="sec1-drink-1"
+                                class="col-md-4 card-img-top img-fluid sec1-drink rounded-left"
+                            />
+                            <div class="col-md-8">
+                                <div class="card-body ml-2">
+                                    <h2
+                                        class="card-title h3 b"
+                                        id="sec1-drink-1-title"
+                                    ></h2>
+                                    <p
+                                        class="h6"
+                                        id="sec1-drink-1-category"
+                                    ></p>
+                                    <hr />
+                                    <h3 class="h4 card-title my-4 mt-lg-n1">
+                                        Ingredients
+                                    </h3>
+                                    <p
+                                        class="card-text"
+                                        id="recipe-ingredients"
+                                    ></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-sm-10 mt-lg-5 mb-5">
+                        <div class="col-12 col-md">
+                            <div
+                                class="card bg-primary shadow-inset border-light p-3"
+                            >
+                                <div
+                                    class="card-body shadow-soft rounded border border-light pt-4 px-5"
+                                >
+                                    <h4 class="h4">Instructions</h4>
+                                    <ul
+                                        class="list-group list-group-flush price-list"
+                                    >
+                                        <li
+                                            class="list-group-item border-primary pb-1"
+                                        >
+                                            <i
+                                                class="fas fa-glass-martini mr-2"
+                                            >
+                                            </i>
+                                            <span
+                                                id="sec1-drink-1-instructions"
+                                                class="h4"
+                                            ></span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-2"></div>
+            </div>
+        </section>
+        <!-- Section 1 ends -->
+        <footer class="shadow-soft">
+            <section class="copyright-text">
+                &copy; 2023 | All rights reserved.
+            </section>
+            <section class="footer-logo">
+                <img
+                    src="images/Drink maker logo.svg"
+                    alt="Drink Maker Logo"
+                    class="logo btn"
+                />
+            </section>
+            <section class="privacy-policy">
+                <!-- Button Modal -->
+                <button
+                    type="button"
+                    class="btn btn-block btn-primary"
+                    data-toggle="modal"
+                    data-target="#modal-default"
+                >
+                    Privacy Policy
+                </button>
+                <!-- Modal Content -->
+                <div
+                    class="modal fade"
+                    id="modal-default"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="modal-default"
+                    aria-hidden="true"
+                >
+                    <div
+                        class="modal-dialog modal-dialog-centered"
+                        role="document"
+                    >
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2
+                                    class="h4 modal-title mb-0"
+                                    id="modal-title-default"
+                                >
+                                    Privacy Policy
+                                </h2>
+                                <button
+                                    type="button"
+                                    class="close"
+                                    data-dismiss="modal"
+                                    aria-label="Close"
+                                >
+                                    <span aria-hidden="true">X</span>
+                                </button>
+                            </div>
+                            <div
+                                class="modal-body"
+                                style="text-indent: 2em; color: #333"
+                            >
+                                <p
+                                    class="text-justify"
+                                    style="font-size: 1.15rem"
+                                >
+                                    This Privacy Policy describes how we (Drink
+                                    Maker) collect, use and share your personal
+                                    information when you visit our “Web Site”.
+                                </p>
+                                <p
+                                    class="text-justify"
+                                    style="font-size: 1.15rem"
+                                >
+                                    Embedded content from other websites behaves
+                                    in the exact same way as if the visitor has
+                                    visited the other website. These websites
+                                    may collect data about you, use cookies,
+                                    embed additional third-party tracking, and
+                                    monitor your interaction with that embedded
+                                    content. If you have an account and are
+                                    logged in to that website, they may track
+                                    your interaction with that embedded content.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button
+                                    type="button"
+                                    class="btn btn-primary text-danger ml-auto"
+                                    data-dismiss="modal"
+                                >
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Modal Content -->
+            </section>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="js/neumorphism.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/popper.js/umd/popper.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

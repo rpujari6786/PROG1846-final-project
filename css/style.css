@@ -1,0 +1,29 @@
+.logo {
+    height: auto;
+    width: 120px;
+    padding: 10px 10px 10px 20px;
+}
+
+.card-title {
+    font-family: "Quicksand", sans-serif;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    padding: 2em 0;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 600px) {
+    footer {
+        flex-direction: column;
+    }
+
+    .copyright-text {
+        order: 2;
+    }
+}
